@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/artist1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;  
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.home-header{
+    width: 100%;
+    height: 60px;
+    overflow: auto;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    background-color: hsl(244, 36%, 47%,0.5);
+}
+.header-i{
+    position: absolute;
+        margin-top: 20px;
+        margin-left: -175px;
+        border: 0;
+}
+.header-img{
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+    float: left;
+}
+.header-search{
+    width: 180px;
+    height: 18px;
+    float:left;
+    position: relative;
+    margin-top: 18px;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: 0;
+}
+.header-list{
+    list-style-type: none;
+    float: right;
+    margin :20px ;
+}
+.header-list li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 18px;
+    color: antiquewhite;
+}
+.home-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+    color:rgb(177, 185, 201);
+    text-align: center;
+}
+.home-text-title{
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-size: 40px;
+}
+.home-text-p{
+    margin-top: 30px;
+    word-spacing: 2px ;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.home-text-but{
+    margin-top: 50px;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.start{
+    background-color: rgb(167, 168, 153);
+    color: black;
+}
+.learn{
+    background-color: rgb(5, 30, 68);
+    color: white;
+}
+.learn:hover , .start:hover{
+    opacity: 0.7;
+}
+/* / /////////////////////////////////////////////////////////////////////////////// 2*/
+.titles{
+    text-align:center ;
+    margin-top: 80px;
+    font-size: 30px;
+}
+.line{
+    width: 400px;
+    height: 3px;
+    background-color: rgb(207, 207, 142);
+    border-radius: 10px;
+    margin: auto;
+}
+.parent-website{
+    overflow: auto;
+    height: 400PX;
+}
+.nature ,.animals,.caracters{
+    float: left;
+    width: 280px;
+    height: 220px;
+    border: rgb(91, 77, 151) solid 2px;
+    margin-top: 80px;
+    margin-left: 50px;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+.nature{
+    margin-left: 150px;
+}
+.icon1{
+    margin-left: 5px;
+    font-size: 30px;
+    color: rgb(81, 82, 170);
+}
+.span-website{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+.p-wedsite{
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+}
+.parent-website-b{
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border: 0;
+    color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.nature:after,.animals:after,.caracters:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(81, 72, 134);
+    opacity: 0.4;
+    transition: 1s;
+    border-radius: 10px;
+}
+.nature:hover::after,.animals:hover::after,.caracters:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0, 8;
+}
+.nature:hover .span-website,.animals:hover .span-website,.caracters:hover .span-website{
+         color: rgb(197, 197, 38);
+}
+/* / /////////////////////////////////////////////////////////////////////////////////////////////////// 3*/
+.futered{
+    width: 100%;
+    height: 800px;
+    background-color:rgb(38, 15, 121);
+}
+.img-futered{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.img-futered1 {
+    background-image: url(../image/photo_2024-11-04_10-43-32.jpg);
+    background-size: cover;
+}
+.img-futered2 {
+    background-image: url(../image/photo_2024-11-04_10-43-29.jpg);
+    background-size: cover;
+}
+.img-futered3 {
+    background-image: url(../image/photo_2024-11-22_05-13-18.jpg);
+    background-size: cover;
+}
+.img-futered4 {
+    background-image: url(../image/photo_2024-11-22_05-13-21.jpg);
+    background-size: cover;
+}
+.img-futered5 {
+    background-image: url(../image/photo_2024-11-04_10-43-20.jpg);
+    background-size: cover;
+}
+.img-futered6 {
+    background-image: url(../image/photo_2024-11-22_05-13-24.jpg);
+    background-size: cover;
+}
+.contact-futered{
+    width: 300px;
+    height: 300px;
+    background-color:rgb(204, 204, 73,0.5);
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+}
+.contact-futered-title{
+    margin-top: 130px;
+}
+.futered-icon{
+    margin: 10px;
+}
+.img-futered:hover .contact-futered{
+    visibility: visible;
+}
+/* / ///////////////////////////////////////////////////////////////////////////////// 4*/
+.parent-offer {
+    overflow: auto;
+}
+.parent-offer div {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin: 50px auto 20px 10px;
+    margin-left: 90px;
+    background-color: white;
+    border-radius: 10px;
+    border: rgb(91, 77, 151) 2px solid;
+}
+.parent-offer i {
+    padding: 5px;
+    font-size: 40px;
+    color: blue;
+    margin-left: 10px;
+}
+.parent-offer p {
+    color: black;
+    font-size:15px;
+    text-align: center;
+}
+.span-offer {
+    padding: 5px;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.widerange,.easy, .modern, .widerange1,.widerange2,.widerange3{
+    position: relative;
+}
+.widerange:after,.easy:after,.modern:after ,.widerange1:after,.widerange2:after,.widerange3:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(81, 72, 134);
+    opacity: 0.4;
+    transition: 1s;
+    border-radius: 10px;
+}
+.widerange:hover::after,.easy:hover::after,.modern:hover::after ,.widerange1:hover::after , .widerange2:hover::after,.widerange3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0,8;
+}
+.widerange:hover .span-offer,.easy:hover .span-offer,.modern:hover .span-offer,.widerange1:hover .span-offer,.widerange2:hover .span-offer,.widerange3:hover .span-offer {
+          color:rgb(197, 197, 38);
+}
+/* / ////////////////////////////////////////////////////////////////////////////////////5 */
+.choose{
+    width: 100%;
+    height: 500px;
+    background-color:whitesmoke;
+    position: relative;
+    margin: 50px 0px;
+}
+.choose-contant-line{
+    width: 350px;
+    height: 3px;
+    background-color: rgb(197, 197, 38);
+}
+.choose-img{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    border-radius: 50%;
+}
+.dots{
+    overflow: auto;
+    margin-left:150px ;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px 10px;
+    cursor: pointer;
+    float: left;
+}
+.dot1{
+    background-color: #363088;
+}
+.dot2 ,.dot3{
+    background-color: rgb(197, 197, 38);
+}
+.dot2:hover ,.dot3:hover{
+    background-color: #412770;
+}
+.choose-contant-list li{
+    margin: 20px;
+}
+.choose-contant-p{
+    font-size: 17px;
+    margin-right: 30px;
+}
+.choose-contant{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.choose-contant-list li{
+    list-style-type: none;
+}
+.choose-contant-list li i{
+    color: rgb(73, 73, 145);
+}
+.choose-contant-title{
+    font-size: 60px;
+}
+/* / //////////////////////////////////////////////////////////////////////////6 */
+.parent-info{
+    overflow: auto;
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/photo_2024-11-22_05-13-18.jpg);
+    background-attachment:fixed ;
+    overflow: auto;
+    position: relative;
+}
+.home1-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img-number{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    overflow: auto;
+    color: rgb(197, 197, 38);
+}
+.number1{
+    float: left;
+    list-style: none;
+    margin-left: 150px;
+    margin-top: 150px;
+    font-size: 20px;
+}
+.number1 .li-number-icon{
+    font-size:50px ;
+    color: #483dec;
+    margin-bottom: 10PX;
+}
+.number1 .li-number{
+    margin-bottom: 10px ;
+}
+/*  / //////////////////////////////////////////////////////////////////////////////// 7*/
+.perant-price {
+    overflow: auto;
+    width: 100%;
+    height: 600px;
+} 
+.list-price{
+    list-style-type: none;
+}
+.li-price{
+    margin: 10px;
+}
+.starter,.basic,.Premium {
+    width: 300px;
+    height: 400px;
+    background-color:white;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 20px;
+    position: relative;
+    border:rgb(91, 77, 151)  1px solid;
+}
+.starter {
+    margin-left: 150px;
+}
+p{
+    margin: 20px;
+}
+.starter:hover .p-price1 , .basic:hover .p-price1 ,.Premium:hover  .p-price1 {
+    color:rgb(197, 197, 38);
+}
+.but-price{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 141);
+    margin-top: 40px;
+    cursor: pointer;
+}
+.starter:after,.basic:after,.Premium:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(81, 72, 134);
+    opacity: 0.4;
+    transition: 1s;
+    border-radius: 20px;
+}
+.starter:hover::after,.basic:hover::after,.Premium:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0,8;
+}
+/* / ////////////////////////////////////////////////////////////////////////////////////8 */
+.people{
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/photo_2024-11-22_05-13-18.jpg);
+    background-attachment: fixed;
+    overflow: auto;
+    position: relative;
+}
+.img-info-people{
+    float: left;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+.img-people{
+    border-radius:50% ;
+}
+.img-info-people-span1,.img-info-people-span3{
+    color:blue;
+    font-size: 30px;
+}
+.img-info-people-span2,.img-info-people-span4 {
+    display: block;
+    margin-left:100px;
+    margin-top: 5px;
+    color:rgb(197, 197, 38) ;
+    font-size: 30px;
+}
+/* / ///////////////////////////////////////////////////////////////////////////////////////////////9 */
+.parent{
+    width: 100%;
+    height:730px;
+    overflow: auto;
+}
+.container{
+    width: 80%;
+}
+.team-item{
+    float: left;
+    background-color: rgb(123, 113, 161);
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+.team1{
+    margin: 60px 30px;
+}
+.team{
+    margin-left: 50px;
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img img{
+    width: 100%;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(85, 85, 221);
+    color: white;
+    font-size: 23px;
+    margin-left: auto;
+}
+.team-overlay a i {
+    line-height: 40px;
+}
+.team-info-title{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 12px 0px;
+}
+.team-info-sp1{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.team-item:hover .team-info-title{
+    color: blue;
+}
+.team-item:hover .team-overlay{
+    visibility: visible;
+}
+.team-item:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(81, 72, 134);
+    opacity: 0.4;
+    transition: 1s;
+    border-radius: 10px;
+}
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0,8;
+}
+/* / ////////////////////////////////////////////////////////////////////////////////////////////////////////// 10*/
+.parent-recent{
+    overflow: auto;
+}
+.img-recent {
+    display: block;
+    padding-right:50px ;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.recent-info{
+    width: 300px;
+    height: 450px;
+    border:rgb(81, 72, 134) 2px solid;
+    float: left;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+.recent1{
+    margin-left: 150px;
+}
+.recent-info i{
+    font-size: 18px;
+    color: blue;
+    margin-top: 10px;
+}
+.recent-info h2{
+    margin-top: 10px;
+}
+.recent-info button{
+    margin-bottom:40px ;
+    background-color: white;
+    color: blue;
+    border: 0;
+}
+.recent-info:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(81, 72, 134);
+    opacity: 0.4;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.recent-info:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0, 8;
+}
+.recent-info:hover h2{
+    color: rgb(91, 91, 156);
+}
+/* / ////////////////////////////////////////////////////////////////////////////////////////////////11 */
+.finish{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(38, 15, 121);
+}
+.img-finish{
+    width:400px; 
+    height:300px;
+    margin-left:470px ;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    border: 0;
+}
+.finish i{
+    font-size: 40px;
+    color: rgb(77, 93, 236);
+    padding-top: 5px;
+    border-radius: 50%;
+}
